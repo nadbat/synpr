@@ -51,7 +51,7 @@ var pathProj = {
         },
         src: { // пути размещения исходных файлов проекта
             pug: 'src/pug/*.{pug,jade}',
-            js: 'src/js/main.js',
+            js: 'src/js/**/*.js',
         	jslibs: 'src/js/libs/*.js',
             style: 'src/style/**/style.scss',
             img: 'src/img/**/*.*',
@@ -63,7 +63,7 @@ var pathProj = {
         watch: { // пути файлов, за изменением которых мы хотим наблюдать
             pug: 'src/**/*.pug',
             html:'src/html/**/*.html',
-            js: 'src/js/script.js',
+            js: 'src/js/**/*.js',
         	jslibs: 'src/js/libs/*.js',
             style: 'src/style/**/*.scss',
             img: 'src/img/**/*.*',
@@ -306,7 +306,7 @@ gulp.task('watch', function(done) {
     gulp.watch(pathProj.watch.pug, gulp.series('build:pug'));
     gulp.watch(pathProj.watch.style, gulp.series('build:scss')).on('change', browserSync.reload);
     gulp.watch(pathProj.watch.fonts, gulp.series('build:fonts'));
-   // gulp.watch(pathProj.watch.js, gulp.series('build:js'));
+    gulp.watch(pathProj.watch.js, gulp.series('js')).on('change', browserSync.reload);
     gulp.watch(pathProj.watch.img, gulp.series('build:img'));
 	gulp.watch(pathProj.watch.html, gulp.series('build:html')).on('change', browserSync.reload);
 	done();
@@ -330,6 +330,6 @@ gulp.task('sftp:push', function (done) {
 //gulp.task('build',gulp.series('clean',gulp.parallel('build:fonts','build:pug','mv:img','build:js','build:scss')));
 //gulp.task('build', gulp.series('clean', gulp.parallel('mv:fonts','mv:js','mv:img',/*'mv:html'*/,'html','build:scss')));
 
-gulp.task('build', gulp.series('clean', gulp.parallel('mv:fonts','mv:js','js', 'jslibs', 'mv:img','build:scss','build:html', 'build:pug')));
+gulp.task('build', gulp.series('clean', gulp.parallel('mv:fonts','mv:js','js', 'mv:img','build:scss','build:html', 'build:pug')));
 
 gulp.task('default', gulp.series('build','webserver','watch')); 

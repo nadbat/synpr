@@ -23,12 +23,12 @@
 
 
 //for slick
-@import "slick/slick-theme";
 @import "slick/slick";
+@import "slick/slick-theme";
 
 /* Include custom CSS files */
 @import "mixins/helpers";
-@import "mixins/font-face";
+@import "mixins/_font-face";
 //@import "includes/typography";
 @import "includes/common";
 
@@ -50,6 +50,7 @@
 @import "includes/news_promo";
 @import "includes/projects";
 @import "includes/smart_home_description";
+@import "includes/partners";
 
 /*for devices*/
 @import "includes/devices_image";
