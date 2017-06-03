@@ -51,10 +51,18 @@
             scrollwheel: false
         };
 
+        var iconPath = 'http://ortambo-airport.com/images/map-icon-blue.svg';
+
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            iconPath = 'https://image.flaticon.com/icons/png/128/34/34469.png';
+        } else {
+            iconPath = 'http://ortambo-airport.com/images/map-icon-blue.svg';
+        }
+
         var map = new google.maps.Map(elem, options);
 
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            icon: 'http://ortambo-airport.com/images/map-icon-blue.svg'
+            icon: iconPath
         });

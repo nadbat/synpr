@@ -6368,6 +6368,13 @@ div.filter {
 .filter-stripe {
   background-color: #ddd; }
 
+.contacts__map {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 750px;
+  height: 460px; }
+
 * {
   box-sizing: border-box; }
 
