@@ -1,0 +1,43 @@
+/* Scss Document */
+
+.btn{
+	font-weight: 300;
+	font-size: $font-size-button;
+	text-transform: uppercase;
+  	text-decoration: none;
+	transition: ease-in-out all 500ms;
+	padding: 14px 24px;
+	border-radius: 3px;
+	display:inline-block;
+	letter-spacing: 0.075em;
+
+	&:hover{
+	transform: scale(1.05 , 1.05)
+	}
+	
+	&--white{
+			background-color: transparent;
+			color: $color-text-white;
+			border: 2px solid $color-text-white;
+
+				&:hover{
+						//color: $color-text-white;
+						//background-color: transparent;
+						//border: none;	
+		  			}	
+	}
+	
+	&--dark{
+			background-color: transparent;
+			color: $color-text-accent;
+			border: 2px solid $color-text-accent;
+		
+			&:hover{
+					//background-color: $color-text-accent;
+					//color: $color-text-white;
+					//border: none;	
+  			}
+	}
+}
+
+	

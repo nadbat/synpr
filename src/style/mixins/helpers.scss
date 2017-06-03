@@ -1,0 +1,44 @@
+.hidden{
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.m-0-a{
+    display: block !important;;
+  margin-left: auto !important;
+  margin-right: auto !important;
+    width: 100%;
+}
+
+.t-ac{
+    text-align: center !important;
+}
+
+@mixin rhythm-padding($top, $bottom: $top) {
+    padding: {
+        top: $top * $line-height-base;
+        bottom: $bottom * $line-height-base;
+    }
+;
+}
+
+@mixin rhythm-margins($top, $bottom: $top) {
+    margin: {
+        top: $top * $line-height-base;
+        bottom: $bottom * $line-height-base;
+    }
+;
+}
+
+
+@mixin padding_line($left, $right) {
+    padding: {
+        left: $left * 1em;
+        right: $right * 1em;
+    }
+;
+}
+
+@mixin transition($animate) {
+    transition: $animate .4s ease;
+}

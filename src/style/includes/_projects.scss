@@ -1,0 +1,27 @@
+
+.projects{
+
+	@include rhythm-margins(4,4);
+}
+
+.projects__item-photo {
+	overflow: hidden;
+}
+
+.projects__item-photo-wrapper {
+	@include transition(box-shadow);
+
+	img {
+		//transition: transform .4s ease;
+		@include transition(transform);
+	}
+
+	&:hover {
+		
+		box-shadow: 3px 3px 32px 7px $color-shadow;
+
+		img {
+			transform: scale(1.2);
+		}
+	}
+}

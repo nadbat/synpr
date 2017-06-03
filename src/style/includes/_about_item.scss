@@ -1,0 +1,42 @@
+.about_item{
+	h2 {
+		text-align: left;
+		@include rhythm-padding(3,2);
+		@include rhythm-margins(0,0);
+	}
+}
+
+
+.chooser_element__photo {
+	overflow: hidden;
+	//position: absolute;
+	//top:50%;
+	//left:50%;
+
+}
+
+
+.chooser_element__photo-wrapper {
+	width: 80px;
+	height: 80px;
+	margin-left:15px;
+	@include rhythm-margins(0,0.75);
+	text: center;
+
+	@include transition(box-shadow);
+	position: relative;
+
+	&:hover{
+		box-shadow: 3px 3px 32px 7px $color-shadow;
+	}
+
+	&:active{
+		border: 2px solid $color-shadow;
+	}
+}
+
+
+.filter-stripe{
+	background-color: $gray-color-step1;
+	
+}

@@ -1,0 +1,35 @@
+/* Scss Document */
+.system_promo {
+	background-color: $color-accent1;
+}
+	
+.feature{
+	
+	@include rhythm-padding(4);
+	text-align: center;
+
+	.feature__title{
+		@include rhythm-margins(0.75);
+	}
+
+	&:hover
+	{
+		background-color: $color-accent-dark;
+		@include rhythm-padding(4);
+
+		.feature__text {
+			display: inline-block;
+			font-size: $font-size-small;
+			color: white;
+			@include rhythm-margins(0);
+		}
+
+		.feature__title {
+			color: white;
+		}
+	}
+}
+
+.feature__text {
+	display: none;
+}

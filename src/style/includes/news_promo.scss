@@ -1,0 +1,38 @@
+/* Scss Document */
+
+.news_promo__inner{
+  @include rhythm-padding(3.33,3.33);
+}
+
+
+.news_promo {
+	background: url(../img/adds_subscription.png) no-repeat;
+  background-position: center;
+	background-size: cover;
+}
+
+.news_promo__mail {
+  @include transition(transform);
+  padding: 14px;
+  border: 2px solid $white;
+  border-radius: 5px 0 0 5px;
+}
+	
+.news_promo__mail-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .btn {
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      transform: none;
+      opacity: .8;
+
+      .news_promo__mail {
+        opacity: .8;
+      }
+    }
+  }
+}
+

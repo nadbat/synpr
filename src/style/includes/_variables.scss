@@ -1,0 +1,102 @@
+/***************************************************/
+/* Set custom or change third-party SASS variables */
+/***************************************************/
+
+
+/* Typography */
+$base-font: 'Open Sans';
+$base-weight: 300;
+
+
+	
+$font-size-base:             16px;
+$font-size-h1:               52px; //4em -это 60 пересчитать
+$font-size-h2:               38px; //2.5em
+$font-size-h3:               24px; //1.5em
+$font-size-large:            20px;
+$font-size-small:            12px;
+
+$font-size-link:             16px;
+$font-size-menu-link:        16px;
+$line-height-base:           1.5em;
+
+
+$font-size-button: 			 14px;
+$font-size-ads:            24px;
+
+
+/* Colors */
+
+$white: #fafafa;
+$gray-darker:#191919; 
+$blue-dark:#276c80;
+$dark-green:#2fa0a9;
+
+
+$light-color-step1:$white;
+$light-color-step2:#f6f6f6;
+$light-color-step3:#ebebeb;
+$gray-color-step1:#dddddd;
+$gray-color-step2:#969696;
+$gray-color-step3:#4c4c4c; //for text top_header
+
+$gray-color-step4:#cacaca; 
+
+
+
+//colors for index blocks
+$color-accent1: $dark-green;
+$color-accent-dark: $blue-dark;
+$color-bg-footer: $gray-color-step4;
+
+$color-shadow: rgba(0,0,0,0.13);
+
+
+$color-text-accent: $dark-green;
+$color-text-white: $white;
+$color-text-black: $gray-darker;
+$color-text-gray: $gray-color-step3;
+
+$color-text-nav_top: $gray-color-step2;       //color for phone and profile
+$color-text-nav_bottom: $gray-color-step3;     //color for main menu
+$color-text-nav_hover: $color-text-black;
+$color-text-filter:	$gray-color-step3;   //color fo filter block
+
+$color-topnav-bg: $light-color-step1;
+$color-bottomnav-bg: $light-color-step2;
+$color-filter-bg: $light-color-step3;
+$color-footer-bg:$gray-color-step2;
+
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #f6f6f6;
+//** Global text color on `<body>`.
+$text-color:            $gray-darker;
+
+//** Global textual link color.
+$link-color:            $dark-green;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $gray-darker;
+
+
+
+
+
+/* Media Queries Breakpoints */
+$mq-breakpoints: (
+        mobile:  300px,
+        tablet:  768px,
+        desktop: 980px,
+        wide:    1150px
+);
+
+
+/* fonts for media */
+
+
+
+/* Sizes */
+
+
+

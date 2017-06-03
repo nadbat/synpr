@@ -1,0 +1,86 @@
+.packages{
+	text-align: center;
+	
+	.package_wrapper{
+		@include rhythm-margins(4);
+	}
+
+	.text_promo, .callbtn, .package_description, .package_image {
+	float:left;
+	text-align:left;
+	}
+
+
+	.infoblock_button{
+		float:right;
+		text-align:right;
+		padding-right: 0;
+	}
+
+	.text_promo {
+
+		padding-left: 0;
+
+		p{
+			margin:0;
+		}
+	}
+	.package_description{
+		@include rhythm-padding(4);
+		padding-left: 4em;
+		padding-right: 4em;
+
+	h3{
+		margin-top: 0;
+	}
+
+	.desctiption__addtocart{
+		display:flex;
+		align-items: center;
+    	flex-flow: row wrap;
+	}
+	p.price{
+		font-size:$font-size-ads;
+		display:inline-block;
+		//@include rhythm-margins(1);
+	}
+
+	.add_cart {
+	float:right;
+	}
+
+	}
+
+	.package_item{
+		@include rhythm-margins(1.5,0);
+		display:flex;
+		background: $white;
+		padding:0;
+		box-shadow: 3px 3px 32px 7px $color-shadow;
+	}
+	.package_image{
+		padding:0;
+		 img{
+		 	width::100%;
+		 }
+	}
+
+	.infoblock{
+	display:flex;
+	align-items: center;
+	@include rhythm-margins(2,0);
+	}
+
+	.package_icons {
+		width: 40px;
+		height:40px;
+		fill: $gray-color-step3;
+	}
+
+	.icons_devices{
+		@include rhythm-padding(0.5,0.5);
+	}
+	
+
+}
+

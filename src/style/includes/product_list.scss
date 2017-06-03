@@ -1,0 +1,51 @@
+/* Scss Document */
+
+.product_list{
+
+}
+
+.product_list__item{
+  
+}
+
+ .product{
+  @include rhythm-padding(2.7,2.7);
+  @include rhythm-margins(1,1);
+  @include transition(box-shadow);
+  text-align: center;
+  background-color: $white;
+  padding-left:25px;
+  padding-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  &:hover{
+    box-shadow: 3px 3px 32px 7px $color-shadow;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.product__img {
+  padding-bottom: 15px;
+}
+.product__price{
+  color:$gray-color-step2;
+  display:inline-block;
+  font-size: 14px;
+}
+
+.product__descr{
+  @include rhythm-padding(0,0.9);
+  font-size: $font-size-large; 
+ }
+
+.product__btn{
+  
+  .btn {
+    font-size: 14px;
+  }
+}

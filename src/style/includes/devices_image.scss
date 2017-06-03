@@ -1,0 +1,11 @@
+.devices_image{
+	background: url("../img/devices_header.png");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+	h2{
+		text-align:left;
+		@include rhythm-padding(0.8, 3);
+	}
+}

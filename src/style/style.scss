@@ -1,0 +1,67 @@
+/* Scss Document */
+
+//@import "bourbon";
+//@import "neat";
+
+
+@charset "UTF-8";
+
+
+
+@import "includes/variables.scss";
+@import "font-awesome/font-awesome.scss";
+
+/* Include bootstrap files */
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap-sass/assets/stylesheets/bootstrap-compass";
+
+
+@import 'includes/normalize';
+/* Include vendor CSS files */
+@import "vendor/mq";
+@import "vendor/animate";
+
+
+//for slick
+@import "slick/slick-theme";
+@import "slick/slick";
+
+/* Include custom CSS files */
+@import "mixins/helpers";
+@import "mixins/font-face";
+//@import "includes/typography";
+@import "includes/common";
+
+//for layout
+@import "includes/header";
+@import "includes/footer";
+@import "includes/buttons";
+
+
+/*for index*/
+@import "includes/mainslider";
+@import "includes/promo_block";
+@import "includes/comments_block";
+@import "includes/howitworks";
+@import "includes/appswebpanel";
+@import "includes/steps";
+@import "includes/packages";
+@import "includes/system_promotion";
+@import "includes/news_promo";
+@import "includes/projects";
+@import "includes/smart_home_description";
+
+/*for devices*/
+@import "includes/devices_image";
+@import "includes/filter";
+@import "includes/product_list";
+
+/*for devices*/
+@import "includes/about_item";
+
+* {
+	box-sizing: border-box;
+}
+//@import "includes/responsive-768-1300";
+//@import "includes/responsive-320-739";
+//@import "includes/outdate-browsers";

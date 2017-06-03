@@ -1,0 +1,20 @@
+.apps_descr{
+	text-align: center;
+}
+
+.appswebpanel{
+	background-color: $gray-color-step1;
+	@include rhythm-padding(3,3);
+}
+
+.badge_buttons{
+	height:53px;
+	width: 169px;
+}
+
+.appsbtns{
+
+	a{
+		display: inline-block;
+	}
+}

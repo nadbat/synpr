@@ -1,0 +1,15 @@
+/* Scss Document */
+.mainslider{
+	background: url(../img/header-desktop-1.png) no-repeat;
+    background-position: center;
+	background-size: cover;
+	height: 613px;
+	line-height: 1.5em;
+};
+
+
+.mainslider_text{
+	h1{
+		@include rhythm-margins(1.2,0.5);
+	}
+}

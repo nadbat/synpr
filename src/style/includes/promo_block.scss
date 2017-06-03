@@ -1,0 +1,30 @@
+/* Scss Document */
+
+.promo_block{
+		background-color: $light-color-step2;
+		@include rhythm-padding(1.5,1.5);
+}
+
+.promo_block__inner{
+    display: flex;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.promo_item, div.promo{
+	float:left;
+	text-align:center;
+}
+
+p.promo_text {
+	display:block;
+	font-size:$font-size-ads;
+	text-transform:uppercase;
+	float:clear;
+	@include rhythm-margins(0,1.5);
+}
+
+.promobutton{
+	float: right;
+}

@@ -1,0 +1,36 @@
+.homeicons{
+	float:right;
+
+    .homeicons_item_smarthub{
+
+    }
+
+
+}
+
+.howitwork__inner {
+	@include rhythm-padding(2, 1);
+	display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+    h2{
+    	text-align:left;
+    	@include rhythm-margins(0,1.3);
+    }
+
+    h3{
+    	@include rhythm-margins(0,1.1);
+    }
+}
+
+.how-descr__text{
+	padding-left:0;
+}
+
+.how_descr{
+	float:left;
+	text-align: left;
+	@include rhythm-margins(5,0);
+}
+

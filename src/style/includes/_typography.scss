@@ -1,0 +1,39 @@
+// FONTS
+//@include font-face('OpenSans-Light', OpenSans, light, opensans-light-webfont);
+//@include font-face('OpenSans-Regular', OpenSans, regular, opensans-regular-webfont);
+//@include font-face('OpenSans-Bold', OpenSans, bold, opensans-bold-webfont);
+//@include font-face('OpenSans-SemiBold', OpenSans, semibold, opensans-semibold-webfont);
+
+// TYPOGRAPHY
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+.h1{
+    @include font-family('OpenSans-Light');
+    font-size: (47 / $base-font-size) + rem;
+    color: $color-h1-title;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    &--cooperation{
+        font-size: (42 / $base-font-size) + rem;
+    }
+}
+
+.h2{
+    @include font-family('OpenSans-Light');
+    font-size: (47 / $base-font-size) + rem;
+    color: $color-h1-title;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}

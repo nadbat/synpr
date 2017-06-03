@@ -1,0 +1,83 @@
+/* Scss Document */
+
+@import "variables.scss";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: $base-font;
+  font-size: $font-size-base;
+  font-weight:$base-weight;
+  line-height: $line-height-base;
+
+  color: $color-text-black;
+  background-color: $body-bg;
+}
+p{
+ 	margin:0;
+ 	padding:0;
+}
+
+ img { 
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1,h2,h3{
+	text-transform: uppercase;
+	font-family: $base-font;
+	font-weight:$base-weight;
+}
+
+h1,
+ {
+	// @include font-family('OpenSans-Light');
+	font-size: $font-size-h1;
+	line-height: $line-height-base;
+	letter-spacing: 0.05em;
+	margin-bottom: 50px; //TODOcheck margins
+}
+
+h1.dark,h2.dark{
+	color: $color-text-black;
+}
+
+h1.white,h2.white, h3.white{
+	color: $white;
+}
+
+h2,
+ {
+	font-size: $font-size-h2;
+	line-height: 1.5rem;
+	letter-spacing: 0.025em;
+	font-weight: $base-weight;
+	text-align:center;
+}
+
+
+h3,
+ {
+	font-size: $font-size-h3;
+	line-height: 1.5rem;
+	letter-spacing: 0.05em;
+	font-weight: normal;
+	font-weight: $base-weight;
+	@include rhythm-margins(0.7,1.2);
+	 
+	 &.accent{
+	color: $color-text-accent;
+	}
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  h2,
+{
+    font-size: 30px;
+  }
+}
