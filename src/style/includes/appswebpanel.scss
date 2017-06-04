@@ -4,7 +4,7 @@
 
 .appswebpanel{
 	background-color: $gray-color-step1;
-	@include rhythm-padding(3,3);
+	@include rhythm-padding(3.2,4.5);
 }
 
 .badge_buttons{
@@ -17,4 +17,12 @@
 	a{
 		display: inline-block;
 	}
+}
+
+.appsbtns_container{
+	@include rhythm-padding(1.5,0);
+}
+
+.appspicture{
+	@include rhythm-padding(3,3);
 }

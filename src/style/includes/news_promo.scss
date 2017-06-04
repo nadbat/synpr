@@ -16,6 +16,7 @@
   padding: 14px;
   border: 2px solid $white;
   border-radius: 5px 0 0 5px;
+  min-width: 400px;
 }
 	
 .news_promo__mail-wrapper {
@@ -31,6 +32,7 @@
 
       .news_promo__mail {
         opacity: .8;
+
       }
     }
   }

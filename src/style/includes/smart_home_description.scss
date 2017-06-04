@@ -3,3 +3,20 @@
 .sh_description_wrapper{
 	@include rhythm-margins(4,1);
 }
+
+
+.sh_icon_pic{
+	width: 142px;
+	height: 142px;
+	fill:#969696;
+}
+
+.sh_column{
+	text-align: center;
+	@include rhythm-margins(2.7,0);
+}
+
+.sh_description{
+	text-align:left;
+	@include padding-line(3,3);
+}

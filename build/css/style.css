@@ -5872,8 +5872,8 @@ p.promo_text {
 
 .appswebpanel {
   background-color: #ddd;
-  padding-top: 4.5em;
-  padding-bottom: 4.5em; }
+  padding-top: 4.8em;
+  padding-bottom: 6.75em; }
 
 .badge_buttons {
   height: 53px;
@@ -5881,6 +5881,14 @@ p.promo_text {
 
 .appsbtns a {
   display: inline-block; }
+
+.appsbtns_container {
+  padding-top: 2.25em;
+  padding-bottom: 0em; }
+
+.appspicture {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em; }
 
 .steps {
   text-align: center; }
@@ -6072,6 +6080,10 @@ p.promo_text {
 .feature:hover .feature__title {
   color: white; }
 
+.feature__icon_pic {
+  width: 30px;
+  height: 20px; }
+
 .feature__text {
   display: none; }
 
@@ -6090,7 +6102,8 @@ p.promo_text {
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   padding: 14px;
   border: 2px solid #fafafa;
-  border-radius: 5px 0 0 5px; }
+  border-radius: 5px 0 0 5px;
+  min-width: 400px; }
 
 .news_promo__mail-wrapper {
   display: -webkit-flex;
@@ -6138,6 +6151,21 @@ p.promo_text {
 .sh_description_wrapper {
   margin-top: 6em;
   margin-bottom: 1.5em; }
+
+.sh_icon_pic {
+  width: 142px;
+  height: 142px;
+  fill: #969696; }
+
+.sh_column {
+  text-align: center;
+  margin-top: 4.05em;
+  margin-bottom: 0em; }
+
+.sh_description {
+  text-align: left;
+  padding-left: 3em;
+  padding-right: 3em; }
 
 .partners_slide {
   outline: none;
@@ -6204,6 +6232,12 @@ p.promo_text {
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   border-radius: 1px; }
+
+.partners img {
+  height: 65px; }
+
+.partners .nest img {
+  height: 55px; }
 
 .devices_image {
   background: url("../img/devices_header.png");
