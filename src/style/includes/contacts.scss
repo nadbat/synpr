@@ -1,7 +1,48 @@
 .contacts__map {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 750px;
-    height: 460px;
+    margin: 0 0;
+    //width: 750px;
+    width: 100%;
+    height: 430px;
+}
+
+.contacts-form{
+	@include rhythm-padding(0, 0);
+	@include rhythm-margins(4.8, 4.8);
+}
+
+.contacts-header {
+
+	background: url("../img/contacts_header.png");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+	h2{
+		text-align:left;
+		@include rhythm-padding(0.8, 3);
+	}
+}
+
+.adress, .phone_number{
+	@include rhythm-padding(0, 1.8);
+}
+
+.contacts-form_inputs__name{
+	font-size: $font-size-small;
+	@include rhythm-padding(0, 0.45);
+	color: $color-text-accent;
+	float: left;
+}
+
+.contacts-form_inputs__field{
+	width: 100%;
+	@include rhythm-padding(0.9, 0.9);
+	@include rhythm-margins(0, 1.5);
+}
+
+.sendbttn {
+	text-align:right;
+	padding-right:0;
+	@include rhythm-padding(0.5, 0);
 }
