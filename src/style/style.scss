@@ -54,14 +54,20 @@
 
 /*for devices*/
 @import "includes/devices_image";
-@import "includes/filter";
+@import "includes/filter_devices";
 @import "includes/product_list";
 
-/*for devices*/
+/*for description*/
 @import "includes/about_item";
+@import "includes/filter_description";
 
 /* for contacts */
 @import "includes/contacts";
+
+
+/* for help */
+@import "includes/help";
+
 
 * {
 	box-sizing: border-box;

@@ -1,0 +1,91 @@
+.help_searchdead{
+	background: url("../img/help_header.png");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+	h2{
+
+		@include rhythm-padding(0.8, 3);
+	}
+}
+
+
+
+.search_input {
+  @include transition(transform);
+  padding: 14px;
+  border: 2px solid $white;
+  border-radius: 5px 0 0 5px;
+  min-width: 400px;
+}
+	
+.search_input__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .btn {
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      transform: none;
+      opacity: .8;
+
+      .search_input {
+        opacity: .8;
+
+      }
+    }
+  }
+}
+
+
+.help_icons {
+	@include rhythm-padding(3,3);
+	background: url("../img/support-desktop.png");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+
+.help_icon__circle{
+	width:99px;
+	height:99px;
+	border-radius: 50px;
+	border: 2px solid $color-text-accent;
+	text-align:center;
+	position: relative;
+	display: block;
+}
+
+.circle_image{
+	width:39px;
+	height: 39px;
+	fill:$color-text-accent;
+	position: absolute;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.help_icon__text{
+	text-align: center;
+}
+
+
+
+ul, li {
+ font-family: sans-serif;
+ list-style-type: none;
+}
+
+.b-docs__item-ttl {
+ text-transform: uppercase;
+ cursor: pointer;
+}
+
+.b-docs__sublist {
+ display: none;
+}

@@ -40,14 +40,14 @@ $gray-color-step1:#dddddd;
 $gray-color-step2:#969696;
 $gray-color-step3:#4c4c4c; //for text top_header
 
-$gray-color-step4:#cacaca; 
+$gray-color-step4:#cacaca; //for footer
 
 
 
 //colors for index blocks
 $color-accent1: $dark-green;
 $color-accent-dark: $blue-dark;
-$color-bg-footer: $gray-color-step4;
+
 
 $color-shadow: rgba(0,0,0,0.13);
 
@@ -65,7 +65,7 @@ $color-text-filter:	$gray-color-step3;   //color fo filter block
 $color-topnav-bg: $light-color-step1;
 $color-bottomnav-bg: $light-color-step2;
 $color-filter-bg: $light-color-step3;
-$color-footer-bg:$gray-color-step2;
+$color-footer-bg:$gray-color-step4;
 
 //## Settings for some of the most global styles.
 

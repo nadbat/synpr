@@ -1,19 +1,19 @@
-div.bottom_header{
+.bottom_header{
 	background-color:$light-color-step1; 
 	color:$color-text-nav_bottom;
 	background-color:$light-color-step1; 
 }
 
-div.filter{
-	background-color:$light-color-step1; 
-	display: flex;
+.filter{
+      background-color: $light-color-step3;
+	   display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 
 
-    .filter_item-sublist {
+    .filter__item-sublist {
   transition: opacity 0.25s ease;
   text-decoration: none;
   padding: 24px 22px;
@@ -25,7 +25,6 @@ div.filter{
   z-index: -1;
   background-color:$light-color-step1; 
 }
-
 
 
 

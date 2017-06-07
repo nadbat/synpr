@@ -8,3 +8,10 @@ $(document).on('ready', function() {
 		nextArrow: '<span class="partners__arrow-right">></span>',
 	});
 });
+
+
+$('.j-docs-tab').each(function() {
+            $(this).on('click', function() {
+                $(this).find('.b-docs__sublist').slideToggle();
+            });
+        });

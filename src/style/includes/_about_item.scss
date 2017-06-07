@@ -35,8 +35,55 @@
 	}
 }
 
+.devicephoto_colorchooser{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
 
-.filter-stripe{
-	background-color: $gray-color-step1;
+.colorchooser{
+	height: 28px;
+	width: 28px;
+	border-radius:	50px;
+	border: 5px solid 	$light-color-step3;		
+}
+
+.colorchooser_black{
+ 	background-color: $gray-darker;
+
+ 	&:active{
+ 		border: 5px solid 	$gray-darker;
+ 	}
+}
+
+.colorchooser_white{ 
+	background-color: $white;
 	
+ 	&:active{
+ 		border: 5px solid 	$white;
+ 	}
+}
+
+.filter-stripe__wrapper{
+	background-color: $gray-color-step1;	
+}
+
+.filter-stripe__inner{
+ 	background-color: $light-color-step3;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.description_atribute{
+	text-align:left;
+	text-transform:uppercase;
+	font-size:$font-size-large;
+}
+
+
+.description_atribute__text{
+	text-align:left;
 }
