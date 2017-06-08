@@ -1,14 +1,11 @@
-.bottom_header{
-	background-color:$light-color-step1; 
-	color:$color-text-nav_bottom;
-	background-color:$light-color-step1; 
-}
 
-.filter{
-      background-color: $light-color-step3;
+.filter_devices{
+      background-color: $gray-color-step1;
 	   display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left:27px;
+    padding-right:27px;
 }
 
 
@@ -23,7 +20,7 @@
   top: 100%;
   left: 0;
   z-index: -1;
-  background-color:$light-color-step1; 
+  background-color:$gray-color-step1;
 }
 
 

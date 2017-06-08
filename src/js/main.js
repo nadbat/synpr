@@ -66,3 +66,26 @@ $(document).on('ready', function(){
 })($('.j-description-tab'));
 })
 
+
+$(document).on('ready', function(){
+    (function($descriptionTabs) {
+ if (!$descriptionTabs.length) {
+  return;
+ }
+ var $link = $descriptionTabs; //ссылка
+ var $tab = $('.devices-content'); //контент
+
+ $link.on('click', function(e) {
+  var $self = $(this);
+  var index = $self.index();
+  e.preventDefault();
+  if (!$self.hasClass('is-active')) {
+   $link.removeClass('is-active');
+   $self.addClass('is-active');
+   $tab.hide();
+   $tab.eq(index).fadeIn();
+  }
+ });
+})($('.j-devices-tab'));
+})
+
