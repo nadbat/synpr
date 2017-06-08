@@ -4,8 +4,13 @@
 
 }
 
+.product_list__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .product_list__item{
-  
+    display: flex;
 }
 
  .product{

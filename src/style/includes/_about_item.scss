@@ -9,21 +9,16 @@
 
 .chooser_element__photo {
 	overflow: hidden;
-	//position: absolute;
-	//top:50%;
-	//left:50%;
-
 }
 
 
 .chooser_element__photo-wrapper {
+	@include rhythm-margins(0,1);
+	@include transition(box-shadow);
 	width: 80px;
 	height: 80px;
 	margin-left:15px;
-	@include rhythm-margins(0,0.75);
 	text: center;
-
-	@include transition(box-shadow);
 	position: relative;
 
 	&:hover{
@@ -36,6 +31,7 @@
 }
 
 .devicephoto_colorchooser{
+	@include rhythm-margins(0.75,0.75);
 	display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,6 +43,8 @@
 	width: 28px;
 	border-radius:	50px;
 	border: 5px solid 	$light-color-step3;		
+	float:left;
+	padding-right:17px;
 }
 
 .colorchooser_black{
@@ -63,6 +61,18 @@
  	&:active{
  		border: 5px solid 	$white;
  	}
+}
+
+.helpforchoosing{
+	@include rhythm-margins(2,1.5);
+}
+
+.description-content {
+	display: none;
+
+	&.is-active {
+		display: block;
+	}
 }
 
 .filter-stripe__wrapper{
