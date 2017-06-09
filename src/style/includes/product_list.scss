@@ -7,6 +7,7 @@
 .product_list__wrapper {
   display: flex;
   flex-flow: row wrap;
+  @include rhythm-padding(2.3,0);
 }
 
 .product_list__item{

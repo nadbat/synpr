@@ -84,12 +84,19 @@ $link-hover-color:      $gray-darker;
 
 
 /* Media Queries Breakpoints */
-$mq-breakpoints: (
-        mobile:  300px,
-        tablet:  768px,
-        desktop: 980px,
-        wide:    1150px
+$bp: (
+        mobile     :  320px,
+        tablet     :  640px,
+        tablet-land:  960px,
+        desktop    : 1280px,
+        wide       : 1440px
 );
+
+$mobile: 320px;
+$tablet: 640px;
+$tablet-land: 960px;
+$desktop: 1280px;
+$desktop-lg: 1440px;
 
 
 /* fonts for media */

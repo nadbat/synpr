@@ -2,6 +2,10 @@
 .projects{
 
 	@include rhythm-margins(4,4);
+
+	h2{
+		@include rhythm-margins(0,2);
+	}
 }
 
 .projects__item-photo {
