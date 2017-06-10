@@ -1,8 +1,12 @@
 /* Scss Document */
 
 .promo_block{
-		background-color: $light-color-step2;
-		@include rhythm-padding(1.5,1.5);
+	@include rhythm-padding(1.5,1.5);
+	background-color: $light-color-step2;
+	
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 
 .promo_block__inner{
@@ -22,9 +26,14 @@ p.promo_text {
 	font-size:$font-size-ads;
 	text-transform:uppercase;
 	float:clear;
-	@include rhythm-margins(0,1.5);
+	@include rhythm-margins(0.5,0.5);
 }
 
 .promobutton{
 	float: right;
+	margin-top: 18px;
+}
+
+.promo_item{
+	padding-left:60px;
 }

@@ -5,7 +5,6 @@
 
     }
 
-
 }
 
 .howitwork__inner {
@@ -21,6 +20,13 @@
 
     h3{
     	@include rhythm-margins(0,1.1);
+    }
+
+    @media (max-width: $tablet) {
+       h2{
+        font-size: 20px;
+        text-align: center;
+       }
     }
 }
 

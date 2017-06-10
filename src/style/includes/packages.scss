@@ -29,6 +29,9 @@
 		@include rhythm-padding(4);
 		padding-left: 4em;
 		padding-right: 4em;
+		display: flex;
+		display: flex;
+    	flex-flow: column nowrap;
 
 	h3{
 		margin-top: 0;
@@ -42,11 +45,13 @@
 	p.price{
 		font-size:$font-size-ads;
 		display:inline-block;
+		margin-right:6px;
 		//@include rhythm-margins(1);
 	}
 
 	.add_cart {
 	float:right;
+	text-align: right;
 	}
 
 	}
@@ -60,6 +65,7 @@
 	}
 	.package_image{
 		padding:0;
+		display:flex;
 		 img{
 		 	width::100%;
 		 }
@@ -75,10 +81,11 @@
 		width: 40px;
 		height:40px;
 		fill: $gray-color-step3;
+		margin-right: 9px;
 	}
 
 	.icons_devices{
-		@include rhythm-padding(0.5,0.5);
+		@include rhythm-padding(0.5,1.5);
 	}
 	
 

@@ -15,8 +15,8 @@
 .chooser_element__photo-wrapper {
 	@include rhythm-margins(0,1);
 	@include transition(box-shadow);
-	width: 80px;
-	height: 80px;
+	width: 78px;
+	height: 78px;
 	margin-left:15px;
 	text: center;
 	position: relative;
@@ -27,6 +27,10 @@
 
 	&:active{
 		border: 2px solid $color-shadow;
+	}
+
+	img{
+		height: 100%;
 	}
 }
 
@@ -49,6 +53,8 @@
 
 .colorchooser_black{
  	background-color: $gray-darker;
+ 	margin-right:17px;
+
 
  	&:active{
  		border: 5px solid 	$gray-darker;
@@ -68,6 +74,7 @@
 }
 
 .description-content {
+	@include rhythm-margins (2.5,2.5);
 	display: none;
 
 	&.is-active {
@@ -86,6 +93,10 @@
     align-items: center;
 }
 
+.filter-stripe__price{
+	padding-right:30px;
+	font-size: $font-size-h3;
+}
 
 .description_atribute{
 	text-align:left;
@@ -95,5 +106,7 @@
 
 
 .description_atribute__text{
+	@include rhythm-margins (0,1.5);
 	text-align:left;
+
 }

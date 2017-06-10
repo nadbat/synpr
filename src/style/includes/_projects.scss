@@ -10,10 +10,12 @@
 
 .projects__item-photo {
 	overflow: hidden;
+	display: flex;
 }
 
 .projects__item-photo-wrapper {
 	@include transition(box-shadow);
+
 
 	img {
 		//transition: transform .4s ease;

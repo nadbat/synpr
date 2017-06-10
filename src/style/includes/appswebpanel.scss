@@ -10,9 +10,16 @@
 .badge_buttons{
 	height:53px;
 	width: 169px;
+
+	@media (min-width: $desktop) {
+		max-width:120px;
+	}
 }
 
 .appsbtns{
+
+	display: inline-block;
+	width:580px;
 
 	a{
 		display: inline-block;
@@ -25,4 +32,9 @@
 
 .appspicture{
 	@include rhythm-padding(3,3);
+}
+
+.apps_text{
+ 	@include rhythm-padding(1.5,1.5);
+ 	text-align: center;
 }

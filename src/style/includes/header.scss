@@ -14,6 +14,9 @@ div.bottom_header{
 	background-color:$light-color-step1; 
 	color:$color-text-nav_bottom;
 	background-color:$light-color-step1; 
+	display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 div.nav_bottom{
@@ -29,8 +32,13 @@ div.nav_bottom{
 }
 
 .top_header__right{
-	float:right;	
-	padding-right:0;
+	float: right;	
+	padding-right: 0;
+	display: flex;
+}
+
+.profile-block {
+	margin-left: auto;
 }
 
 .user_profile{
@@ -63,6 +71,7 @@ div.nav_bottom{
     color:$color-text-nav_bottom;
     text-transform: uppercase;
 	list-style:none;
+	margin-left: auto;
 
 
 	&__list {
@@ -78,10 +87,18 @@ div.nav_bottom{
 	}
 
 	&__link {
+		@include transition(color);
     	font-size: $font-size-menu-link;
    		text-transform: uppercase;
     	text-decoration: none;
     	color: $color-text-nav_bottom;
+	}
+
+	&__link-icon {
+		display: inline-block;
+		position: relative;
+		width: 45px;
+		height: 35px;
 	}
 }
 
@@ -91,7 +108,9 @@ div.nav_bottom{
 	position: relative;
 
     &:hover {
-		color:$color-text-nav_hover;
+		.main-nav__link {
+			color: blue;
+		}
 
 		.main-nav__item-sublist {
 			opacity: 1;
@@ -106,8 +125,10 @@ div.nav_bottom{
 	padding:5px 0 14px 0;
 
 	.icon_cart_image{
-		width:46px;
-		height:34px;
+		position: absolute;
+		top: 10px;
+		width: 46px;
+		height: 34px;
 	}
 
 }
