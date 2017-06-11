@@ -18,5 +18,11 @@
 
 .sh_description{
 	text-align:left;
-	@include padding-line(3,3);
+	@include padding-line(3.8,2.2);
+}
+
+.sh_description{
+	p {
+		padding-left:0px;
+	}
 }

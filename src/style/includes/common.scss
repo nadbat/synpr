@@ -37,6 +37,10 @@ h1,
 	line-height: $line-height-base;
 	letter-spacing: 0.05em;
 	margin-bottom: 50px; //TODOcheck margins
+
+	@media (min-width:$tablet){
+		line-height: 2em;
+	}
 }
 
 h1.dark,h2.dark{
@@ -92,4 +96,9 @@ input{
 {
     font-size: 30px;
   }
+}
+
+//hide svg sprite
+.b-icons__svg{
+	display:none;
 }

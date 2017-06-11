@@ -330,6 +330,6 @@ gulp.task('sftp:push', function (done) {
 //gulp.task('build',gulp.series('clean',gulp.parallel('build:fonts','build:pug','mv:img','build:js','build:scss')));
 //gulp.task('build', gulp.series('clean', gulp.parallel('mv:fonts','mv:js','mv:img',/*'mv:html'*/,'html','build:scss')));
 
-gulp.task('build', gulp.series('clean', gulp.parallel('mv:fonts','mv:js','js', 'mv:img','build:scss','build:html', 'build:pug')));
+gulp.task('build', gulp.series('clean', gulp.parallel('mv:fonts','mv:js','js','build:scss', 'mv:img', 'build:html', 'build:pug')));
 
 gulp.task('default', gulp.series('build','webserver','watch')); 

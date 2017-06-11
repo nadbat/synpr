@@ -16,6 +16,10 @@
 .projects__item-photo-wrapper {
 	@include transition(box-shadow);
 
+	@media(max-width: $tablet) {
+		float:left;
+	}
+
 
 	img {
 		//transition: transform .4s ease;
