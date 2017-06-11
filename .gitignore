@@ -1,5 +1,7 @@
 /.DS_Store
 /.DS_Store/*
+/.idea/
+/.idea/*
 /bower_components
 /bower_components/*
 /node_modules

@@ -24,6 +24,40 @@
 		}
 	}
 
+.footer_tags{
+
+	@media (min-width: $tablet){
+		display:block;
+	}
+
+	@media (max-width: $tablet){
+		display:none;
+	}
+}
+
+.footer_contacts{
+
+	@media (min-width: $tablet){
+		display:block;
+	}
+	@media(max-width:$tablet){
+		display:none;
+	}
+}
+
+.social{
+
+	@media(max-width:$tablet){
+		display:block;
+	}
+
+	@media(min-width:$tablet){
+		display:flex;
+		flex-direction: row wrap;
+    	align-items: flex-start;
+    	flex-flow: row wrap;
+	}
+}
 
 .page-footer_contacts__item	{
 	display:block;
