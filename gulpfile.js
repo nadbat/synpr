@@ -3,6 +3,7 @@
 const gulp = require('gulp'),
     rimraf = require('rimraf'),
     svgSprite = require('gulp-svg-sprite'),
+    plumberNotifier = require('gulp-plumber-notifier'),
 	del = require('del'),//удаление файлов
     mainfiles = require('main-bower-files'),//переопределение основных файлов Bower
     pug = require('gulp-pug'),//плагин компиляции pug
@@ -186,6 +187,7 @@ gulp.task('build:scss',function(done){
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))*/
+        .pipe(plumberNotifier())
         .pipe(/*gulpIf(isDevelopment,*/sourcemaps.init())
 		.pipe(debug({title: 'src'}))
         .pipe(sass({
@@ -226,7 +228,8 @@ gulp.task('build:scss',function(done){
 //Сборка и оптимизация JS libs
 
 gulp.task('js', function (done) {
-    gulp.src(pathProj.src.js)  
+    gulp.src(pathProj.src.js)
+        .pipe(plumberNotifier())
         .pipe(gulp.dest(pathProj.build.js))
         .pipe(reload({stream: true}));
     done();
@@ -234,7 +237,8 @@ gulp.task('js', function (done) {
 
 //Сборка JS
 gulp.task('jslibs', function () {
-    return gulp.src(pathProj.src.jslibs)  
+    return gulp.src(pathProj.src.jslibs)
+        .pipe(plumberNotifier())
         .pipe(concat('libs.js'))
         .pipe(gulp.dest(pathProj.build.js))
         .pipe(reload({stream: true}));
@@ -245,6 +249,7 @@ gulp.task('jslibs', function () {
 
 gulp.task('build:img', function (done) {
     gulp.src(pathProj.src.img) //Выберем наши картинки
+        .pipe(plumberNotifier())
         .pipe(imagemin({ //Сожмем их
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -260,6 +265,7 @@ gulp.task('build:img', function (done) {
 
 gulp.task('mv:img',function(done){
     gulp.src(pathProj.src.img)
+        .pipe(plumberNotifier())
         .pipe(gulp.dest(pathProj.build.img))
         .pipe(reload({stream: true}));
      gulp.src(pathProj.src.svgsprt)
@@ -278,6 +284,7 @@ gulp.task('webserver', function (done) {
   // Копирование и оптимизация изображений
 gulp.task('img', function () {
     return gulp.src(pathProj.src.img)
+        .pipe(plumberNotifier())
         .pipe(imagemin({
             progressive: true,
             optimizationLevel: 5,

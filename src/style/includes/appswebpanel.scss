@@ -1,40 +1,42 @@
-.apps_descr{
-	text-align: center;
+.apps_descr {
+  text-align: center;
 }
 
-.appswebpanel{
-	background-color: $gray-color-step1;
-	@include rhythm-padding(3.2,4.5);
+.appswebpanel {
+  background-color: $gray-color-step1;
+  @include rhythm-padding(3.2, 4.5);
 }
 
-.badge_buttons{
-	height:53px;
-	width: 169px;
+.badge_buttons {
+  height: 53px;
+  width: 169px;
 
-	@media (min-width: $desktop) {
-		max-width:120px;
-	}
+  @media (max-width: $desktop) {
+    max-width: 120px;
+  }
 }
 
-.appsbtns{
+.appsbtns {
+  display: inline-block;
 
-	display: inline-block;
-	width:580px;
+  @media (min-width: $tablet-land) {
+    width: 580px;
+  }
 
-	a{
-		display: inline-block;
-	}
+  a {
+    display: inline-block;
+  }
 }
 
-.appsbtns_container{
-	@include rhythm-padding(1.5,0);
+.appsbtns_container {
+  @include rhythm-padding(1.5, 0);
 }
 
-.appspicture{
-	@include rhythm-padding(3,3);
+.appspicture {
+  @include rhythm-padding(3, 3);
 }
 
-.apps_text{
- 	@include rhythm-padding(1.5,1.5);
- 	text-align: center;
+.apps_text {
+  @include rhythm-padding(1.5, 1.5);
+  text-align: center;
 }

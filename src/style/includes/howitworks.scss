@@ -40,3 +40,93 @@
 	@include rhythm-margins(5,0);
 }
 
+
+$iconcolor: #2fa0a9;
+$bgcolor: #fff;
+
+.smarthouse {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media (min-width: $tablet-land) {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+}
+
+.smarthouse__wrapper {
+  background-color: $white;
+}
+
+.smarthouse-descr {
+
+  @media (min-width: $tablet-land) {
+    width: 35%;
+  }
+}
+
+.smarthouse-descr__item {
+  padding: 20px;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.smarthouse-descr__ttl {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.smarthouse-descr__subttl {
+  text-align: left;
+}
+
+.smarthouse__svg {
+  overflow: hidden;
+
+  @media (min-width: $tablet-land) {
+    overflow: visible;
+    width: 65%;
+    text-align: right;
+  }
+
+  svg {
+    width: 360px;
+    height: 350px;
+
+    @media (min-width: $tablet-land) {
+      width: 560px;
+      height: 550px;
+    }
+  }
+}
+
+.smarthouse__svg-icon {
+
+  .icon-wrap {
+    cursor: pointer;
+  }
+
+  .icon-wrap.is-active {
+
+    .background {
+      fill: $iconcolor;
+    }
+
+    .icon {
+      fill: $bgcolor;
+    }
+  }
+
+  .background {
+    transition: fill .4s ease;
+    fill: $bgcolor;
+  }
+
+  .icon {
+    transition: fill .4s ease;
+    fill: $iconcolor;
+  }
+}
