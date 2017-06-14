@@ -26,33 +26,31 @@ $font-size-ads:            24px;
 
 
 /* Colors */
+$white              : #fafafa;
+$blue               : #276c80;
+$cyan               : #2fa0a9;
+$main               : $white;
+$gray-darker        : darken($main, 88.24);
 
-$white: #fafafa;
-$gray-darker:#191919; 
-$blue-dark:#276c80;
-$dark-green:#2fa0a9;
-
-
-$light-color-step1:$white;
-$light-color-step2:#f6f6f6;
-$light-color-step3:#ebebeb;
-$gray-color-step1:#dddddd;
-$gray-color-step2:#969696;
-$gray-color-step3:#4c4c4c; //for text top_header
-
-$gray-color-step4:#cacaca; //for footer
+$light-color-step1  : $white;
+$light-color-step2  : darken($main, 1.57);
+$light-color-step3  : darken($main, 5.88);
+$gray-color-step1   : darken($main, 11.37);
+$gray-color-step2   : darken($main, 39.22);
+$gray-color-step3   : darken($main, 68.24); //for text top_header
+$gray-color-step4   : darken($main, 18.82); //for footer
 
 
 
 //colors for index blocks
-$color-accent1: $dark-green;
-$color-accent-dark: $blue-dark;
+$color-accent1: $cyan;
+$color-accent-dark: $blue;
 
 
 $color-shadow: rgba(0,0,0,0.13);
 
 
-$color-text-accent: $dark-green;
+$color-text-accent: $cyan;
 $color-text-white: $white;
 $color-text-black: $gray-darker;
 $color-text-gray: $gray-color-step3;
@@ -70,12 +68,12 @@ $color-footer-bg:$gray-color-step4;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #f6f6f6;
+$body-bg:               $light-color-step2;
 //** Global text color on `<body>`.
 $text-color:            $gray-darker;
 
 //** Global textual link color.
-$link-color:            $dark-green;
+$link-color:            $cyan;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $gray-darker;
 

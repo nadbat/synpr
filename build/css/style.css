@@ -5685,8 +5685,7 @@ div.top_header {
   height: 40px; }
 
 .top_header__left {
-  float: left;
-  padding-left: 0; }
+  float: left; }
 
 .top_header__right {
   float: right;
@@ -5708,6 +5707,10 @@ div.top_header {
   text-align: center;
   margin-bottom: 18px;
   margin-top: 18px; }
+
+@media (min-width: 1280px) {
+  .site-logo {
+    text-align: left; } }
 
 .site-logo .logo {
   height: 39px;
@@ -6262,7 +6265,7 @@ p.promo_text {
 
 .steps_inner__counter {
   position: absolute;
-  background-color: #fff;
+  background-color: #fafafa;
   padding: 5px;
   top: 0;
   left: -20px;

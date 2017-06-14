@@ -102,7 +102,6 @@ div.top_header {
 
 .top_header__left {
     float: left;
-    padding-left: 0;
 }
 
 .top_header__right {
@@ -127,6 +126,10 @@ div.top_header {
     margin-bottom: 18px;
     margin-top: 18px;
 
+    @media (min-width: $desktop) {
+        text-align: left;
+    }
+    
     .logo {
         height: 39px;
         width: 151px;
