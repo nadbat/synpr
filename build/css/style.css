@@ -5925,7 +5925,7 @@ div.top_header {
 
 .sociallinks_link i {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   font-size: 24px;
   -webkit-transform: translate(-50%, -50%);
