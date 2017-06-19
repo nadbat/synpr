@@ -57,10 +57,22 @@
     text-align: center;
     position: relative;
     display: block;
+    margin-bottom: 46px;
 }
 
 .circle_image {
     width: 39px;
+    height: 39px;
+    fill: $color-text-accent;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle_image_chat {
+    width: 50px;
     height: 39px;
     fill: $color-text-accent;
     position: absolute;

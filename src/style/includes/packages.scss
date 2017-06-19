@@ -81,7 +81,18 @@
         width: 40px;
         height: 40px;
         fill: $gray-color-step3;
+        background: nonet;
         margin-right: 9px;
+
+        .icon-wrap {
+                .background {
+                    fill: none;
+                }
+
+                .icon {
+                    fill: $gray-color-step3;
+                }
+        }
     }
 
     .icons_devices {
@@ -89,4 +100,6 @@
     }
 
 }
+
+
 
